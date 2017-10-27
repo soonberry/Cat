@@ -18,6 +18,12 @@
 		F8B197131F9758EE004FF734 /* CatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B197121F9758EE004FF734 /* CatTests.swift */; };
 		F8B1971E1F9758EE004FF734 /* CatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1971D1F9758EE004FF734 /* CatUITests.swift */; };
 		F8B1972C1F975A49004FF734 /* CatLoginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1972B1F975A49004FF734 /* CatLoginSpec.swift */; };
+		F8B1972E1FA07F33004FF734 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1972D1FA07F33004FF734 /* HomeViewController.swift */; };
+		F8B197301FA08018004FF734 /* HomeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1972F1FA08018004FF734 /* HomeCellModel.swift */; };
+		F8B197321FA08083004FF734 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B197311FA08083004FF734 /* HomeViewModel.swift */; };
+		F8B197341FA0822E004FF734 /* HomeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B197331FA0822E004FF734 /* HomeCellViewModel.swift */; };
+		F8B197361FA083AF004FF734 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B197351FA083AF004FF734 /* HomeTableViewCell.swift */; };
+		F8B197391FA0870E004FF734 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B197381FA0870E004FF734 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +67,12 @@
 		F8B1971D1F9758EE004FF734 /* CatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatUITests.swift; sourceTree = "<group>"; };
 		F8B1971F1F9758EE004FF734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8B1972B1F975A49004FF734 /* CatLoginSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatLoginSpec.swift; sourceTree = "<group>"; };
+		F8B1972D1FA07F33004FF734 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F8B1972F1FA08018004FF734 /* HomeCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellModel.swift; sourceTree = "<group>"; };
+		F8B197311FA08083004FF734 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F8B197331FA0822E004FF734 /* HomeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellViewModel.swift; sourceTree = "<group>"; };
+		F8B197351FA083AF004FF734 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		F8B197381FA0870E004FF734 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +132,10 @@
 				F8B196FC1F9758EE004FF734 /* Cat */,
 				F8B197111F9758EE004FF734 /* CatTests */,
 				F8B1971C1F9758EE004FF734 /* CatUITests */,
-				F8B196FB1F9758EE004FF734 /* Products */,
-				4EFB02C503F2750A0C7CB003 /* Pods */,
 				8792A5DF63B0C8B0DC1EDA80 /* Frameworks */,
+				4EFB02C503F2750A0C7CB003 /* Pods */,
+				F8B196FB1F9758EE004FF734 /* Products */,
+				F8B197381FA0870E004FF734 /* R.generated.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,11 +153,16 @@
 			isa = PBXGroup;
 			children = (
 				F8B196FD1F9758EE004FF734 /* AppDelegate.swift */,
-				F8B196FF1F9758EE004FF734 /* ViewController.swift */,
-				F8B197011F9758EE004FF734 /* Main.storyboard */,
 				F8B197041F9758EE004FF734 /* Assets.xcassets */,
-				F8B197061F9758EE004FF734 /* LaunchScreen.storyboard */,
+				F8B1972F1FA08018004FF734 /* HomeCellModel.swift */,
+				F8B197331FA0822E004FF734 /* HomeCellViewModel.swift */,
+				F8B197351FA083AF004FF734 /* HomeTableViewCell.swift */,
+				F8B1972D1FA07F33004FF734 /* HomeViewController.swift */,
+				F8B197311FA08083004FF734 /* HomeViewModel.swift */,
 				F8B197091F9758EE004FF734 /* Info.plist */,
+				F8B197061F9758EE004FF734 /* LaunchScreen.storyboard */,
+				F8B197011F9758EE004FF734 /* Main.storyboard */,
+				F8B196FF1F9758EE004FF734 /* ViewController.swift */,
 			);
 			path = Cat;
 			sourceTree = "<group>";
@@ -152,9 +170,9 @@
 		F8B197111F9758EE004FF734 /* CatTests */ = {
 			isa = PBXGroup;
 			children = (
+				F8B1972B1F975A49004FF734 /* CatLoginSpec.swift */,
 				F8B197121F9758EE004FF734 /* CatTests.swift */,
 				F8B197141F9758EE004FF734 /* Info.plist */,
-				F8B1972B1F975A49004FF734 /* CatLoginSpec.swift */,
 			);
 			path = CatTests;
 			sourceTree = "<group>";
@@ -176,6 +194,7 @@
 			buildConfigurationList = F8B197221F9758EE004FF734 /* Build configuration list for PBXNativeTarget "Cat" */;
 			buildPhases = (
 				51B6D3A3D690BDC20C6C1E9B /* [CP] Check Pods Manifest.lock */,
+				F8B197371FA08483004FF734 /* ShellScript */,
 				F8B196F61F9758EE004FF734 /* Sources */,
 				F8B196F71F9758EE004FF734 /* Frameworks */,
 				F8B196F81F9758EE004FF734 /* Resources */,
@@ -314,11 +333,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cat-CatTests/Pods-Cat-CatTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -334,11 +355,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cat-CatUITests/Pods-Cat-CatUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -419,9 +442,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Cat/Pods-Cat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -461,6 +487,19 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F8B197371FA08483004FF734 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -468,8 +507,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B197301FA08018004FF734 /* HomeCellModel.swift in Sources */,
 				F8B197001F9758EE004FF734 /* ViewController.swift in Sources */,
+				F8B197361FA083AF004FF734 /* HomeTableViewCell.swift in Sources */,
+				F8B197391FA0870E004FF734 /* R.generated.swift in Sources */,
 				F8B196FE1F9758EE004FF734 /* AppDelegate.swift in Sources */,
+				F8B197341FA0822E004FF734 /* HomeCellViewModel.swift in Sources */,
+				F8B197321FA08083004FF734 /* HomeViewModel.swift in Sources */,
+				F8B1972E1FA07F33004FF734 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +557,7 @@
 				F8B197021F9758EE004FF734 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		F8B197061F9758EE004FF734 /* LaunchScreen.storyboard */ = {
@@ -520,6 +566,7 @@
 				F8B197071F9758EE004FF734 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

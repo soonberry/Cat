@@ -6,6 +6,7 @@ target 'Cat' do
   use_frameworks!
 
   # Pods for Cat
+  pod ‘R.swift’, ‘~> 4.0.0’
 
   def testing_pods
     pod 'Quick'
