@@ -11,10 +11,29 @@ import UIKit
 class HomeViewController: UIViewController {
     var viewModel = HomeViewModel()
 
+    @IBOutlet weak var slideShowScrollView: UIScrollView!
+    
+    var slideShowImageArray = [UIImage]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        slideShowImageArray = [#imageLiteral(resourceName: "catwhite"), #imageLiteral(resourceName: "catc"), #imageLiteral(resourceName: "catd"), #imageLiteral(resourceName: "cata"), #imageLiteral(resourceName: "catas")]
+        
+        for index in 0..<slideShowImageArray.count {
+            let slideShowImageView = UIImageView()
+            slideShowImageView.image = slideShowImageArray[index]
+            slideShowImageView.contentMode = .scaleAspectFit
+            let xPosition = self.view.frame.width * CGFloat(index)
+            
+            slideShowImageView.frame = CGRect(x: xPosition, y: 0, width: self.slideShowScrollView.frame.width, height: self.slideShowScrollView.frame.height)
+            
+            slideShowScrollView.contentSize.width = slideShowScrollView.frame.width * CGFloat(index + 1)
+            slideShowScrollView.addSubview(slideShowImageView)
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

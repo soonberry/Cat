@@ -280,13 +280,18 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       try main.validate()
+      try launchScreen.validate()
     }
     
-    struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType {
+    struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
       typealias InitialController = UIKit.UIViewController
       
       let bundle = R.hostingBundle
       let name = "LaunchScreen"
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "Cat On Cloud") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Cat On Cloud' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
+      }
       
       fileprivate init() {}
     }
