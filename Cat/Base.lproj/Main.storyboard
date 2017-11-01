@@ -12,61 +12,99 @@
     </dependencies>
     <scenes>
         <!--My Cat-->
+        <scene sceneID="ahX-SO-TBF">
+            <objects>
+                <viewController storyboardIdentifier="My Cat" title="My Cat" id="KVs-ch-5RM" customClass="MyCatViewController" customModule="Cat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OB1-4Y-9GI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="I4X-Jl-Ttg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Cat" id="Fvy-im-bKs"/>
+                    <connections>
+                        <segue destination="ZUB-bh-4J0" kind="presentation" identifier="loginSegue" id="SwQ-vP-a0T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2L-u6-hU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-90" y="2288"/>
+        </scene>
+        <!--My Cat-->
         <scene sceneID="2Te-Lj-Ai5">
             <objects>
-                <viewController id="ZUB-bh-4J0" sceneMemberID="viewController">
+                <viewController id="ZUB-bh-4J0" customClass="LoginViewController" customModule="Cat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="boF-Gx-P2n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Lod-47-jod">
-                                <rect key="frame" x="72" y="99" width="232" height="291"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginHead" translatesAutoresizingMaskIntoConstraints="NO" id="Mbi-tv-rMA">
-                                        <rect key="frame" x="0.0" y="0.0" width="232" height="53"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cat On Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="YAx-4q-wrz">
-                                        <rect key="frame" x="27" y="83" width="178" height="28"/>
-                                    </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User name" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIO-rt-B1H">
-                                        <rect key="frame" x="64" y="141" width="104" height="30"/>
-                                        <color key="tintColor" red="0.029256761074066162" green="0.79457229375839233" blue="0.94560486078262329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="textColor" red="0.032592151314020157" green="0.76669389009475708" blue="0.93414384126663208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4vU-UY-hmG">
-                                        <rect key="frame" x="68" y="201" width="96" height="30"/>
-                                        <color key="tintColor" red="0.029256761074066162" green="0.79457229375839233" blue="0.94560486078262329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="textColor" red="0.032592151314020157" green="0.76669389009475708" blue="0.93414384126663208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07Q-xw-Ovu">
-                                        <rect key="frame" x="97" y="261" width="38" height="30"/>
-                                        <state key="normal" title="Login"/>
-                                    </button>
-                                </subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginHead" translatesAutoresizingMaskIntoConstraints="NO" id="Mbi-tv-rMA">
+                                <rect key="frame" x="72" y="99" width="232" height="53"/>
                                 <constraints>
-                                    <constraint firstItem="Mbi-tv-rMA" firstAttribute="leading" secondItem="Lod-47-jod" secondAttribute="leading" id="3mA-1V-akH"/>
-                                    <constraint firstItem="4vU-UY-hmG" firstAttribute="leading" secondItem="Lod-47-jod" secondAttribute="leading" constant="68" id="D6k-Tq-Zie"/>
-                                    <constraint firstItem="bIO-rt-B1H" firstAttribute="leading" secondItem="Lod-47-jod" secondAttribute="leading" constant="64" id="FBm-en-EWJ"/>
-                                    <constraint firstItem="YAx-4q-wrz" firstAttribute="leading" secondItem="Lod-47-jod" secondAttribute="leading" constant="27" id="zrl-SG-2ul"/>
+                                    <constraint firstAttribute="width" constant="232" id="34H-92-6RQ"/>
                                 </constraints>
-                            </stackView>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cat On Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="YAx-4q-wrz">
+                                <rect key="frame" x="99.5" y="182" width="177" height="28"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4vU-UY-hmG">
+                                <rect key="frame" x="98" y="300" width="180" height="30"/>
+                                <color key="tintColor" red="0.029256761074066162" green="0.79457229375839233" blue="0.94560486078262329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.032592151314020157" green="0.76669389009475708" blue="0.93414384126663208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07Q-xw-Ovu">
+                                <rect key="frame" x="168" y="372" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginTouched:" destination="ZUB-bh-4J0" eventType="touchUpInside" id="eco-yQ-q1n"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYR-ma-qmI">
+                                <rect key="frame" x="72" y="434" width="232" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97967320680618286" green="0.069830648601055145" blue="0.029300665482878685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.99923092126846313" green="0.19729864597320557" blue="0.0035093333572149277" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIO-rt-B1H">
+                                <rect key="frame" x="98" y="240" width="180" height="30"/>
+                                <color key="tintColor" red="0.029256761074066162" green="0.79457229375839233" blue="0.94560486078262329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.032592151314020157" green="0.76669389009475708" blue="0.93414384126663208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.92538958790000003" green="0.92554813619999998" blue="0.92537957429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Lod-47-jod" firstAttribute="centerX" secondItem="boF-Gx-P2n" secondAttribute="centerX" id="QE4-gE-rIP"/>
-                            <constraint firstItem="Lod-47-jod" firstAttribute="top" secondItem="LLN-8K-JYH" secondAttribute="top" constant="79" id="Wnd-pM-ujw"/>
+                            <constraint firstItem="LYR-ma-qmI" firstAttribute="top" secondItem="07Q-xw-Ovu" secondAttribute="bottom" constant="32" id="2VT-xz-4Oy"/>
+                            <constraint firstItem="bIO-rt-B1H" firstAttribute="leading" secondItem="LLN-8K-JYH" secondAttribute="leading" constant="98" id="6Ov-c6-vqR"/>
+                            <constraint firstItem="YAx-4q-wrz" firstAttribute="top" secondItem="Mbi-tv-rMA" secondAttribute="bottom" constant="30" id="8Nt-gf-jlO"/>
+                            <constraint firstItem="LYR-ma-qmI" firstAttribute="centerX" secondItem="LLN-8K-JYH" secondAttribute="centerX" id="8ag-kh-OGX"/>
+                            <constraint firstItem="Mbi-tv-rMA" firstAttribute="centerX" secondItem="LLN-8K-JYH" secondAttribute="centerX" id="B5u-kn-vMv"/>
+                            <constraint firstItem="bIO-rt-B1H" firstAttribute="trailing" secondItem="4vU-UY-hmG" secondAttribute="trailing" id="KgR-J2-ZiD"/>
+                            <constraint firstItem="Mbi-tv-rMA" firstAttribute="centerX" secondItem="YAx-4q-wrz" secondAttribute="centerX" id="Lmj-rQ-aMG"/>
+                            <constraint firstItem="Mbi-tv-rMA" firstAttribute="centerX" secondItem="07Q-xw-Ovu" secondAttribute="centerX" constant="1" id="RWc-0d-PoS"/>
+                            <constraint firstItem="07Q-xw-Ovu" firstAttribute="top" secondItem="4vU-UY-hmG" secondAttribute="bottom" constant="42" id="UOD-uf-pFk"/>
+                            <constraint firstItem="4vU-UY-hmG" firstAttribute="top" secondItem="bIO-rt-B1H" secondAttribute="bottom" constant="30" id="Va2-AF-3qx"/>
+                            <constraint firstItem="Mbi-tv-rMA" firstAttribute="top" secondItem="LLN-8K-JYH" secondAttribute="top" constant="79" id="abL-MP-sMS"/>
+                            <constraint firstItem="bIO-rt-B1H" firstAttribute="top" secondItem="YAx-4q-wrz" secondAttribute="bottom" constant="30" id="qCv-0b-kmZ"/>
+                            <constraint firstItem="Mbi-tv-rMA" firstAttribute="centerX" secondItem="4vU-UY-hmG" secondAttribute="centerX" id="t7g-4f-xdM"/>
+                            <constraint firstItem="bIO-rt-B1H" firstAttribute="leading" secondItem="4vU-UY-hmG" secondAttribute="leading" id="uMf-3Q-uyA"/>
+                            <constraint firstItem="LYR-ma-qmI" firstAttribute="width" secondItem="Mbi-tv-rMA" secondAttribute="width" id="v0j-YQ-qHv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LLN-8K-JYH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Cat" id="ETU-Gy-A7m"/>
+                    <connections>
+                        <outlet property="labelErrorMessage" destination="LYR-ma-qmI" id="4pI-T7-IBY"/>
+                        <outlet property="textFieldName" destination="bIO-rt-B1H" id="uoK-1C-E09"/>
+                        <outlet property="textFieldPassword" destination="4vU-UY-hmG" id="qKQ-KI-2T6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CnR-Ee-cot" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="1850"/>
+            <point key="canvasLocation" x="725.60000000000002" y="1849.9250374812596"/>
         </scene>
         <!--Cats Nearby-->
         <scene sceneID="NoP-qG-sAq">
@@ -185,7 +223,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Tlr-SW-EfL" kind="relationship" relationship="viewControllers" id="AFb-1b-7RV"/>
-                        <segue destination="ZUB-bh-4J0" kind="relationship" relationship="viewControllers" id="AU5-CQ-auP"/>
+                        <segue destination="KVs-ch-5RM" kind="relationship" relationship="viewControllers" id="ZuR-k9-pou"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cn5-EK-hEM" userLabel="First Responder" sceneMemberID="firstResponder"/>

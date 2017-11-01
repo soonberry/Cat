@@ -24,6 +24,17 @@
 		F8B197341FA0822E004FF734 /* HomeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B197331FA0822E004FF734 /* HomeCellViewModel.swift */; };
 		F8B197361FA083AF004FF734 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B197351FA083AF004FF734 /* HomeTableViewCell.swift */; };
 		F8B197391FA0870E004FF734 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B197381FA0870E004FF734 /* R.generated.swift */; };
+		F8B1973B1FA9BAD6004FF734 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1973A1FA9BAD6004FF734 /* LoginViewController.swift */; };
+		F8B7606A1FA9BB8C004F1D7F /* MyCatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B760691FA9BB8C004F1D7F /* MyCatViewModel.swift */; };
+		F8B7606C1FA9BCEF004F1D7F /* MyCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7606B1FA9BCEF004F1D7F /* MyCatViewController.swift */; };
+		F8B7606E1FA9C152004F1D7F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7606D1FA9C152004F1D7F /* LoginViewModel.swift */; };
+		F8B760701FA9C34F004F1D7F /* LoginCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7606F1FA9C34F004F1D7F /* LoginCredential.swift */; };
+		F8B760721FA9C382004F1D7F /* LoginKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B760711FA9C382004F1D7F /* LoginKey.swift */; };
+		F8B760741FA9C3AE004F1D7F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B760731FA9C3AE004F1D7F /* APIError.swift */; };
+		F8B760771FA9C3DD004F1D7F /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B760761FA9C3DD004F1D7F /* LoginService.swift */; };
+		F8B7607B1FA9C732004F1D7F /* LoginCredentialTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7607A1FA9C732004F1D7F /* LoginCredentialTranslator.swift */; };
+		F8B7607E1FA9CBA0004F1D7F /* LoginKeyTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7607D1FA9CBA0004F1D7F /* LoginKeyTranslator.swift */; };
+		F8B760801FA9CE7E004F1D7F /* APIErrorTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7607F1FA9CE7E004F1D7F /* APIErrorTranslator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +84,17 @@
 		F8B197331FA0822E004FF734 /* HomeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellViewModel.swift; sourceTree = "<group>"; };
 		F8B197351FA083AF004FF734 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		F8B197381FA0870E004FF734 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		F8B1973A1FA9BAD6004FF734 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F8B760691FA9BB8C004F1D7F /* MyCatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCatViewModel.swift; sourceTree = "<group>"; };
+		F8B7606B1FA9BCEF004F1D7F /* MyCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCatViewController.swift; sourceTree = "<group>"; };
+		F8B7606D1FA9C152004F1D7F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F8B7606F1FA9C34F004F1D7F /* LoginCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredential.swift; sourceTree = "<group>"; };
+		F8B760711FA9C382004F1D7F /* LoginKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKey.swift; sourceTree = "<group>"; };
+		F8B760731FA9C3AE004F1D7F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		F8B760761FA9C3DD004F1D7F /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		F8B7607A1FA9C732004F1D7F /* LoginCredentialTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentialTranslator.swift; sourceTree = "<group>"; };
+		F8B7607D1FA9CBA0004F1D7F /* LoginKeyTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKeyTranslator.swift; sourceTree = "<group>"; };
+		F8B7607F1FA9CE7E004F1D7F /* APIErrorTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTranslator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,17 +174,20 @@
 		F8B196FC1F9758EE004FF734 /* Cat */ = {
 			isa = PBXGroup;
 			children = (
+				F8B7607C1FA9C7DB004F1D7F /* translator */,
+				F8B760791FA9C64E004F1D7F /* model */,
+				F8B760781FA9C3F5004F1D7F /* viewmodel */,
+				F8B760751FA9C3CB004F1D7F /* service */,
 				F8B196FD1F9758EE004FF734 /* AppDelegate.swift */,
 				F8B197041F9758EE004FF734 /* Assets.xcassets */,
-				F8B1972F1FA08018004FF734 /* HomeCellModel.swift */,
-				F8B197331FA0822E004FF734 /* HomeCellViewModel.swift */,
 				F8B197351FA083AF004FF734 /* HomeTableViewCell.swift */,
 				F8B1972D1FA07F33004FF734 /* HomeViewController.swift */,
-				F8B197311FA08083004FF734 /* HomeViewModel.swift */,
 				F8B197091F9758EE004FF734 /* Info.plist */,
 				F8B197061F9758EE004FF734 /* LaunchScreen.storyboard */,
 				F8B197011F9758EE004FF734 /* Main.storyboard */,
 				F8B196FF1F9758EE004FF734 /* ViewController.swift */,
+				F8B1973A1FA9BAD6004FF734 /* LoginViewController.swift */,
+				F8B7606B1FA9BCEF004F1D7F /* MyCatViewController.swift */,
 			);
 			path = Cat;
 			sourceTree = "<group>";
@@ -184,6 +209,46 @@
 				F8B1971F1F9758EE004FF734 /* Info.plist */,
 			);
 			path = CatUITests;
+			sourceTree = "<group>";
+		};
+		F8B760751FA9C3CB004F1D7F /* service */ = {
+			isa = PBXGroup;
+			children = (
+				F8B760761FA9C3DD004F1D7F /* LoginService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		F8B760781FA9C3F5004F1D7F /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				F8B760691FA9BB8C004F1D7F /* MyCatViewModel.swift */,
+				F8B7606D1FA9C152004F1D7F /* LoginViewModel.swift */,
+				F8B1972F1FA08018004FF734 /* HomeCellModel.swift */,
+				F8B197331FA0822E004FF734 /* HomeCellViewModel.swift */,
+				F8B197311FA08083004FF734 /* HomeViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		F8B760791FA9C64E004F1D7F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7606F1FA9C34F004F1D7F /* LoginCredential.swift */,
+				F8B760711FA9C382004F1D7F /* LoginKey.swift */,
+				F8B760731FA9C3AE004F1D7F /* APIError.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F8B7607C1FA9C7DB004F1D7F /* translator */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7607A1FA9C732004F1D7F /* LoginCredentialTranslator.swift */,
+				F8B7607D1FA9CBA0004F1D7F /* LoginKeyTranslator.swift */,
+				F8B7607F1FA9CE7E004F1D7F /* APIErrorTranslator.swift */,
+			);
+			path = translator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,13 +572,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B760701FA9C34F004F1D7F /* LoginCredential.swift in Sources */,
+				F8B7606C1FA9BCEF004F1D7F /* MyCatViewController.swift in Sources */,
+				F8B1973B1FA9BAD6004FF734 /* LoginViewController.swift in Sources */,
+				F8B7606A1FA9BB8C004F1D7F /* MyCatViewModel.swift in Sources */,
 				F8B197301FA08018004FF734 /* HomeCellModel.swift in Sources */,
 				F8B197001F9758EE004FF734 /* ViewController.swift in Sources */,
 				F8B197361FA083AF004FF734 /* HomeTableViewCell.swift in Sources */,
+				F8B760771FA9C3DD004F1D7F /* LoginService.swift in Sources */,
+				F8B760721FA9C382004F1D7F /* LoginKey.swift in Sources */,
+				F8B7607B1FA9C732004F1D7F /* LoginCredentialTranslator.swift in Sources */,
+				F8B760741FA9C3AE004F1D7F /* APIError.swift in Sources */,
+				F8B7607E1FA9CBA0004F1D7F /* LoginKeyTranslator.swift in Sources */,
 				F8B197391FA0870E004FF734 /* R.generated.swift in Sources */,
 				F8B196FE1F9758EE004FF734 /* AppDelegate.swift in Sources */,
+				F8B7606E1FA9C152004F1D7F /* LoginViewModel.swift in Sources */,
 				F8B197341FA0822E004FF734 /* HomeCellViewModel.swift in Sources */,
 				F8B197321FA08083004FF734 /* HomeViewModel.swift in Sources */,
+				F8B760801FA9CE7E004F1D7F /* APIErrorTranslator.swift in Sources */,
 				F8B1972E1FA07F33004FF734 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

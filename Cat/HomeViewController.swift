@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
         for index in 0..<slideShowImageArray.count {
             let slideShowImageView = UIImageView()
             slideShowImageView.image = slideShowImageArray[index]
-            slideShowImageView.contentMode = .scaleAspectFit
+            slideShowImageView.contentMode = .scaleToFill
             let xPosition = self.view.frame.width * CGFloat(index)
             
             slideShowImageView.frame = CGRect(x: xPosition, y: 0, width: self.slideShowScrollView.frame.width, height: self.slideShowScrollView.frame.height)
