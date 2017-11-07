@@ -10,8 +10,8 @@
 		742261A5E880BA2D51C01318 /* Pods_Cat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746EB43AC705AD869989E54C /* Pods_Cat.framework */; };
 		AED45BAA13E15C4328030FF7 /* Pods_Cat_CatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA11FF21AE1FED7B978333D /* Pods_Cat_CatUITests.framework */; };
 		DE9F1E5A2F2C14D7C2EFC863 /* Pods_Cat_CatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0074280BAC68B081FC8604C0 /* Pods_Cat_CatTests.framework */; };
+		F8A936911FB1947100190502 /* BannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A936901FB1947100190502 /* BannerService.swift */; };
 		F8B196FE1F9758EE004FF734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B196FD1F9758EE004FF734 /* AppDelegate.swift */; };
-		F8B197001F9758EE004FF734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B196FF1F9758EE004FF734 /* ViewController.swift */; };
 		F8B197031F9758EE004FF734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B197011F9758EE004FF734 /* Main.storyboard */; };
 		F8B197051F9758EE004FF734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B197041F9758EE004FF734 /* Assets.xcassets */; };
 		F8B197081F9758EE004FF734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B197061F9758EE004FF734 /* LaunchScreen.storyboard */; };
@@ -64,9 +64,9 @@
 		746EB43AC705AD869989E54C /* Pods_Cat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7496E3B7046BA4C46D1FEF4 /* Pods-Cat-CatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat-CatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cat-CatTests/Pods-Cat-CatTests.release.xcconfig"; sourceTree = "<group>"; };
 		E8D3AD95A0F23CC824EC17E1 /* Pods-Cat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cat/Pods-Cat.release.xcconfig"; sourceTree = "<group>"; };
+		F8A936901FB1947100190502 /* BannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerService.swift; sourceTree = "<group>"; };
 		F8B196FA1F9758EE004FF734 /* Cat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B196FD1F9758EE004FF734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F8B196FF1F9758EE004FF734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8B197021F9758EE004FF734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8B197041F9758EE004FF734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8B197071F9758EE004FF734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -174,6 +174,7 @@
 		F8B196FC1F9758EE004FF734 /* Cat */ = {
 			isa = PBXGroup;
 			children = (
+				F8B760811FAB040D004F1D7F /* viewcontroller */,
 				F8B7607C1FA9C7DB004F1D7F /* translator */,
 				F8B760791FA9C64E004F1D7F /* model */,
 				F8B760781FA9C3F5004F1D7F /* viewmodel */,
@@ -181,13 +182,9 @@
 				F8B196FD1F9758EE004FF734 /* AppDelegate.swift */,
 				F8B197041F9758EE004FF734 /* Assets.xcassets */,
 				F8B197351FA083AF004FF734 /* HomeTableViewCell.swift */,
-				F8B1972D1FA07F33004FF734 /* HomeViewController.swift */,
 				F8B197091F9758EE004FF734 /* Info.plist */,
 				F8B197061F9758EE004FF734 /* LaunchScreen.storyboard */,
 				F8B197011F9758EE004FF734 /* Main.storyboard */,
-				F8B196FF1F9758EE004FF734 /* ViewController.swift */,
-				F8B1973A1FA9BAD6004FF734 /* LoginViewController.swift */,
-				F8B7606B1FA9BCEF004F1D7F /* MyCatViewController.swift */,
 			);
 			path = Cat;
 			sourceTree = "<group>";
@@ -215,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				F8B760761FA9C3DD004F1D7F /* LoginService.swift */,
+				F8A936901FB1947100190502 /* BannerService.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -249,6 +247,16 @@
 				F8B7607F1FA9CE7E004F1D7F /* APIErrorTranslator.swift */,
 			);
 			path = translator;
+			sourceTree = "<group>";
+		};
+		F8B760811FAB040D004F1D7F /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				F8B1972D1FA07F33004FF734 /* HomeViewController.swift */,
+				F8B1973A1FA9BAD6004FF734 /* LoginViewController.swift */,
+				F8B7606B1FA9BCEF004F1D7F /* MyCatViewController.swift */,
+			);
+			path = viewcontroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,12 +406,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cat-CatTests/Pods-Cat-CatTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -420,12 +430,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cat-CatUITests/Pods-Cat-CatUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -508,10 +520,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cat/Pods-Cat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,7 +591,6 @@
 				F8B1973B1FA9BAD6004FF734 /* LoginViewController.swift in Sources */,
 				F8B7606A1FA9BB8C004F1D7F /* MyCatViewModel.swift in Sources */,
 				F8B197301FA08018004FF734 /* HomeCellModel.swift in Sources */,
-				F8B197001F9758EE004FF734 /* ViewController.swift in Sources */,
 				F8B197361FA083AF004FF734 /* HomeTableViewCell.swift in Sources */,
 				F8B760771FA9C3DD004F1D7F /* LoginService.swift in Sources */,
 				F8B760721FA9C382004F1D7F /* LoginKey.swift in Sources */,
@@ -590,6 +603,7 @@
 				F8B197341FA0822E004FF734 /* HomeCellViewModel.swift in Sources */,
 				F8B197321FA08083004FF734 /* HomeViewModel.swift in Sources */,
 				F8B760801FA9CE7E004F1D7F /* APIErrorTranslator.swift in Sources */,
+				F8A936911FB1947100190502 /* BannerService.swift in Sources */,
 				F8B1972E1FA07F33004FF734 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

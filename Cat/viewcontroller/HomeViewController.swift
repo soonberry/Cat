@@ -14,18 +14,35 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var slideShowScrollView: UIScrollView!
     
     var slideShowImageArray = [UIImage]()
+    let bannerService = BannerService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        slideShowImageArray = [#imageLiteral(resourceName: "catwhite"), #imageLiteral(resourceName: "catc"), #imageLiteral(resourceName: "catd"), #imageLiteral(resourceName: "cata"), #imageLiteral(resourceName: "catas")]
-        
+        bannerService.getBanner(success: loadingBanner, failure: loadingFailure)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    private func loadingBanner(bannerImage: UIImage) {
+        slideShowImageArray.append(bannerImage)
+        initSlideShow()
+    }
+    
+    private func loadingFailure(error: APIError) {
+        print(error.message)
+    }
+    
+    private func initSlideShow() {
         for index in 0..<slideShowImageArray.count {
             let slideShowImageView = UIImageView()
             slideShowImageView.image = slideShowImageArray[index]
-            slideShowImageView.contentMode = .scaleToFill
+            slideShowImageView.contentMode = .scaleAspectFill
             let xPosition = self.view.frame.width * CGFloat(index)
             
             slideShowImageView.frame = CGRect(x: xPosition, y: 0, width: self.slideShowScrollView.frame.width, height: self.slideShowScrollView.frame.height)
@@ -35,12 +52,6 @@ class HomeViewController: UIViewController {
             
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     /*
     // MARK: - Navigation
