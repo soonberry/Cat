@@ -121,16 +121,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="251"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ztn-T0-gJP">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="251"/>
-                                        </scrollView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFw-7R-GoZ" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="250.5"/>
+                                            <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="Ztn-T0-gJP" secondAttribute="bottom" id="Cbb-OT-pg9"/>
-                                        <constraint firstAttribute="trailing" secondItem="Ztn-T0-gJP" secondAttribute="trailing" id="FCE-5P-chI"/>
-                                        <constraint firstItem="Ztn-T0-gJP" firstAttribute="top" secondItem="5Hc-4U-Dda" secondAttribute="top" id="b5T-47-T5X"/>
-                                        <constraint firstItem="Ztn-T0-gJP" firstAttribute="leading" secondItem="5Hc-4U-Dda" secondAttribute="leading" id="fAY-Ic-14B"/>
+                                        <constraint firstItem="SFw-7R-GoZ" firstAttribute="top" secondItem="5Hc-4U-Dda" secondAttribute="top" id="2L9-N7-MVz"/>
+                                        <constraint firstAttribute="bottom" secondItem="SFw-7R-GoZ" secondAttribute="bottom" id="2U0-49-IHj"/>
+                                        <constraint firstItem="SFw-7R-GoZ" firstAttribute="leading" secondItem="5Hc-4U-Dda" secondAttribute="leading" id="Zv4-Hx-QQx"/>
+                                        <constraint firstAttribute="trailing" secondItem="SFw-7R-GoZ" secondAttribute="trailing" id="oQg-6m-jND"/>
                                     </constraints>
                                 </view>
                                 <prototypes>
@@ -205,7 +206,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Cats Nearby" id="dEx-Go-bMa"/>
                     <connections>
-                        <outlet property="slideShowScrollView" destination="Ztn-T0-gJP" id="G4l-HF-kpy"/>
+                        <outlet property="imageSlideShow" destination="SFw-7R-GoZ" id="LmC-p4-EY4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCx-ag-gpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
