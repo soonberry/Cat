@@ -8,16 +8,12 @@
 
 import Foundation
 
-let cellModel = HomeCellModel(
-    cat: "Miao",
-    message: "Miao miao",
-    timestamp: "2017-10-23T02:18:33:238z"
-)
-
-let mockModels = [cellModel, cellModel]
-
 class HomeViewModel {
-    var homeModels: [HomeCellModel] = mockModels
+    var homeModels: [Moment] = []
+    
+    func setMoments(momentList: [Moment]) {
+        self.homeModels = momentList
+    }
     
     var count: Int {
         get {

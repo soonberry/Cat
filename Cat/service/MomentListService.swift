@@ -14,7 +14,7 @@ class MomentListService {
     private let apiErrorTranslator = APIErrorTranslator()
     private let decoder = JSONDecoder()
     
-    func getMomentList(success: @escaping (_ moment: [Moment]) -> Void, failure: @escaping (APIError) -> Void) {
+    func getMomentList(success: @escaping (_ moments: [Moment]) -> Void, failure: @escaping (APIError) -> Void) {
         let session = URLSession(configuration: urlSessionConfiguration)
         
         var request = URLRequest(url: urlAppearance!)

@@ -11,19 +11,3 @@ import Foundation
 struct MomentList: Codable {
     let moments: [Moment]
 }
-
-struct Moment: Codable {
-    let avatar: Avatar
-    let cat: String
-    let id: String
-    let message: String
-    let timestamp: String
-    let thumbs: Thumbs
-    
-    struct Avatar: Codable {
-        let image: String
-    }
-    struct Thumbs: Codable {
-        let image: String
-    }
-}

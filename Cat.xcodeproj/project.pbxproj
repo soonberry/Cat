@@ -23,7 +23,6 @@
 		F8B1971E1F9758EE004FF734 /* CatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1971D1F9758EE004FF734 /* CatUITests.swift */; };
 		F8B1972C1F975A49004FF734 /* CatLoginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1972B1F975A49004FF734 /* CatLoginSpec.swift */; };
 		F8B1972E1FA07F33004FF734 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1972D1FA07F33004FF734 /* HomeViewController.swift */; };
-		F8B197301FA08018004FF734 /* HomeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1972F1FA08018004FF734 /* HomeCellModel.swift */; };
 		F8B197321FA08083004FF734 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B197311FA08083004FF734 /* HomeViewModel.swift */; };
 		F8B197341FA0822E004FF734 /* HomeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B197331FA0822E004FF734 /* HomeCellViewModel.swift */; };
 		F8B197361FA083AF004FF734 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B197351FA083AF004FF734 /* HomeTableViewCell.swift */; };
@@ -40,6 +39,7 @@
 		F8B7607E1FA9CBA0004F1D7F /* LoginKeyTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7607D1FA9CBA0004F1D7F /* LoginKeyTranslator.swift */; };
 		F8B760801FA9CE7E004F1D7F /* APIErrorTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7607F1FA9CE7E004F1D7F /* APIErrorTranslator.swift */; };
 		F8FC45661FC45E4A0099987E /* MomentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FC45651FC45E4A0099987E /* MomentList.swift */; };
+		F8FC45681FC7161C0099987E /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FC45671FC7161C0099987E /* Moment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +88,6 @@
 		F8B1971F1F9758EE004FF734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8B1972B1F975A49004FF734 /* CatLoginSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatLoginSpec.swift; sourceTree = "<group>"; };
 		F8B1972D1FA07F33004FF734 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		F8B1972F1FA08018004FF734 /* HomeCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellModel.swift; sourceTree = "<group>"; };
 		F8B197311FA08083004FF734 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F8B197331FA0822E004FF734 /* HomeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellViewModel.swift; sourceTree = "<group>"; };
 		F8B197351FA083AF004FF734 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -105,6 +104,7 @@
 		F8B7607D1FA9CBA0004F1D7F /* LoginKeyTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKeyTranslator.swift; sourceTree = "<group>"; };
 		F8B7607F1FA9CE7E004F1D7F /* APIErrorTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTranslator.swift; sourceTree = "<group>"; };
 		F8FC45651FC45E4A0099987E /* MomentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentList.swift; sourceTree = "<group>"; };
+		F8FC45671FC7161C0099987E /* Moment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,7 +234,6 @@
 				F8B197351FA083AF004FF734 /* HomeTableViewCell.swift */,
 				F8B760691FA9BB8C004F1D7F /* MyCatViewModel.swift */,
 				F8B7606D1FA9C152004F1D7F /* LoginViewModel.swift */,
-				F8B1972F1FA08018004FF734 /* HomeCellModel.swift */,
 				F8B197331FA0822E004FF734 /* HomeCellViewModel.swift */,
 				F8B197311FA08083004FF734 /* HomeViewModel.swift */,
 			);
@@ -250,6 +249,7 @@
 				F8A936921FB2F14E00190502 /* BannerList.swift */,
 				F8A936941FB309AF00190502 /* CatImage.swift */,
 				F8FC45651FC45E4A0099987E /* MomentList.swift */,
+				F8FC45671FC7161C0099987E /* Moment.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -423,6 +423,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cat-CatTests/Pods-Cat-CatTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
@@ -431,6 +432,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -449,6 +451,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cat-CatUITests/Pods-Cat-CatUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
@@ -457,6 +460,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -541,12 +545,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cat/Pods-Cat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,7 +617,6 @@
 				F8B7606C1FA9BCEF004F1D7F /* MyCatViewController.swift in Sources */,
 				F8B1973B1FA9BAD6004FF734 /* LoginViewController.swift in Sources */,
 				F8B7606A1FA9BB8C004F1D7F /* MyCatViewModel.swift in Sources */,
-				F8B197301FA08018004FF734 /* HomeCellModel.swift in Sources */,
 				F8B197361FA083AF004FF734 /* HomeTableViewCell.swift in Sources */,
 				F8B760771FA9C3DD004F1D7F /* LoginService.swift in Sources */,
 				F8A9369B1FB436EC00190502 /* Procedure.swift in Sources */,
@@ -625,6 +630,7 @@
 				F8B196FE1F9758EE004FF734 /* AppDelegate.swift in Sources */,
 				F8B7606E1FA9C152004F1D7F /* LoginViewModel.swift in Sources */,
 				F8B197341FA0822E004FF734 /* HomeCellViewModel.swift in Sources */,
+				F8FC45681FC7161C0099987E /* Moment.swift in Sources */,
 				F8B197321FA08083004FF734 /* HomeViewModel.swift in Sources */,
 				F8B760801FA9CE7E004F1D7F /* APIErrorTranslator.swift in Sources */,
 				F8A936931FB2F14E00190502 /* BannerList.swift in Sources */,

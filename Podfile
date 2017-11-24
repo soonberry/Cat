@@ -9,6 +9,7 @@ target 'Cat' do
   pod ‘R.swift’, ‘~> 4.0.0’
   pod 'ImageSlideshow', '~> 1.4'
   pod 'ImageSlideshow/AFURL'
+  pod 'Kingfisher', '~> 4.0'
 
   def testing_pods
     pod 'Quick'

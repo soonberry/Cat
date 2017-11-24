@@ -10,9 +10,12 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var catName: UILabel!
-    @IBOutlet weak var catTime: UILabel!
+    
+    @IBOutlet weak var catThumb: UIImageView!
     @IBOutlet weak var catMessage: UILabel!
+    @IBOutlet weak var catTime: UILabel!
+    @IBOutlet weak var catName: UILabel!
+    @IBOutlet weak var catAvatar: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

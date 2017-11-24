@@ -10,24 +10,21 @@ import UIKit
 import ImageSlideshow
 
 class HomeViewController: UIViewController {
-    var viewModel = HomeViewModel()
-
+    let viewModel = HomeViewModel()
+    
+    @IBOutlet weak var momentTableView: UITableView!
     @IBOutlet weak var slideShowScrollView: UIScrollView!
     @IBOutlet weak var imageSlideShow: ImageSlideshow!
     
     let imageURLPrefix = "http://localhost:8080/catnip"
     
-    
+    let momentListService = MomentListService()
     let bannerService = BannerService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-//        BannerService.getBanner()
-//            .onSuccess(self.loadingBanner)
-//            .execute()
         bannerService.getBanner(success: loadingBanner, failure: loadingFailure)
+        momentListService.getMomentList(success: loadingMoments, failure: loadingFailure)
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,39 +39,16 @@ class HomeViewController: UIViewController {
         }
         imageSlideShow.setImageInputs(imageSource)
         print(imageSource)
- //       slideShowImageArray.append(bannerImages)
- //       initSlideShow()
     }
     
     private func loadingFailure(error: APIError) {
         print(error.message)
     }
     
-//    private func initSlideShow() {
-//        for index in 0..<slideShowImageArray.count {
-//            let slideShowImageView = UIImageView()
-//            slideShowImageView.image = slideShowImageArray[index]
-//            slideShowImageView.contentMode = .scaleAspectFill
-//            let xPosition = self.view.frame.width * CGFloat(index)
-//
-//            slideShowImageView.frame = CGRect(x: xPosition, y: 0, width: self.slideShowScrollView.frame.width, height: self.slideShowScrollView.frame.height)
-//
-//            slideShowScrollView.contentSize.width = slideShowScrollView.frame.width * CGFloat(index + 1)
-//            slideShowScrollView.addSubview(slideShowImageView)
-//
-//        }
-//    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func loadingMoments(moments: [Moment]) {
+        viewModel.setMoments(momentList: moments)
+        momentTableView.reloadData()
     }
-    */
-
 }
 
 extension HomeViewController:UITableViewDataSource {
@@ -90,8 +64,6 @@ extension HomeViewController:UITableViewDataSource {
         let cellViewModel = viewModel.getCellViewModel(index: indexPath.row)
         
         cell.updateUI(cellViewModel: cellViewModel)
-    
-
         return cell
     }
     

@@ -9,9 +9,9 @@
 import Foundation
 
 class HomeCellViewModel {
-    var model: HomeCellModel
+    var model: Moment
     
-    init(model: HomeCellModel) {
+    init(model: Moment) {
         self.model = model
     }
     
@@ -27,12 +27,10 @@ class HomeCellViewModel {
     }
     
     var time: String {
-        let timestamp = "5 mins"
-        return getTime(timestamp: timestamp)
+        get {
+            return model.timestamp
+        }
     }
-    
-    private func getTime(timestamp: String) -> String {
-        return timestamp
-    }
+
     
 }
