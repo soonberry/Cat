@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import Kingfisher
 
 class HomeCellViewModel {
+    let prefix = "http://localhost:8080/catnip"
     var model: Moment
     
     init(model: Moment) {
@@ -31,6 +33,20 @@ class HomeCellViewModel {
             return model.timestamp
         }
     }
-
+    var avatar: URL {
+        get {
+            return URL(string: prefix + model.avatar.image)!
+        }
+    }
+    
+    var thumbs: [URL] {
+        get {
+            var url: [URL] = []
+            for imageURL in model.thumbs {
+                url.append(URL(string: prefix + imageURL.image)!)
+            }
+            return url
+        }
+    }
     
 }
